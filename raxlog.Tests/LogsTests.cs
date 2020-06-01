@@ -114,7 +114,7 @@ namespace RaxLog.Tests
 			var rangedLogs = GetLogs(testIndex, 101);
 
 			if (rangedLogs.Length != 101)
-				throw new Exception("Выборка логов вернула больше, чем запрашивалось.");
+				throw new Exception("Выборка логов вернула больше или меньше, чем запрашивалось.");
 
 			if (rangedLogs[0].Text != allLogs[testIndex].Text)
 				throw new Exception("Выборка логов ошиблась в смещение (начало смещения).");
@@ -160,9 +160,9 @@ namespace RaxLog.Tests
 				if (log.Categories == null || log.Categories.Length == 0)
 					throw new Exception("У какой-то записи лога нет категорий.");
 				if (log.Date < _beginTime)
-					throw new Exception("Время однго из полученных логов меньше времени первого лога.");
+					throw new Exception("Время одного из полученных логов меньше времени первого лога.");
 				if (log.Date > _endTime)
-					throw new Exception("Время однго из полученных логов превышает время последнего лога.");
+					throw new Exception("Время одного из полученных логов превышает время последнего лога.");
 			}
 
 
