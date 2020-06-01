@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <RootNamespace>RaxLog.Tests</RootNamespace>
+    <Platforms>AnyCPU;x64</Platforms>
+    <StartupObject>RaxLog.Tests.LogsBenchmark</StartupObject>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="BenchmarkDotNet" Version="0.12.1" />
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="15.3.0" />
+    <PackageReference Include="MSTest.TestAdapter" Version="1.1.18" />
+    <PackageReference Include="MSTest.TestFramework" Version="1.1.18" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\raxlog\raxlog.csproj" />
+  </ItemGroup>
+
+</Project>
