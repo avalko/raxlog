@@ -1,4 +1,9 @@
-﻿using RaxLog.Core.Abstract;
+// Copyright 2020 Artem Valko.
+// Licensed under the Apache License, Version 2.0.
+// See LICENSE in the project root for license information.
+// See NOTICE  in the project root for for additional information regarding copyright ownership.
+
+using RaxLog.Core.Abstract;
 using RaxLog.Core.Storage.Factories;
 using System;
 using System.Collections.Concurrent;

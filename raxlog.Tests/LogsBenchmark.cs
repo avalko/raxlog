@@ -1,4 +1,9 @@
-﻿using BenchmarkDotNet.Attributes;
+// Copyright 2020 Artem Valko.
+// Licensed under the Apache License, Version 2.0.
+// See LICENSE in the project root for license information.
+// See NOTICE  in the project root for for additional information regarding copyright ownership.
+
+using BenchmarkDotNet.Attributes;
 using RaxLog.Core;
 using RaxLog.Core.Helpers;
 using RaxLog.Core.Structures;
